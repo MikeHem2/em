@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>KM-DAM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="lg.jpeg">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    
+
+
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+</head>
+
+
+
+
+<body>
+    <!-- encabezamiento web-funsko -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">km-dam@gmail.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">3108488197</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://funksoweb.cms.webnode.com.co/" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://funksoweb.cms.webnode.com.co/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://funksoweb.cms.webnode.com.co/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://funksoweb.cms.webnode.com.co/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Cierre de encabezamiento  -->
+
+
+    <!--  -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                KM-DAM
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span  class="navbar-toggler-icon"></span>
+            </button>
+
+            <style>
+                .im{
+                    width: 35px;
+                    height: 35px;
+                     
+                    position: relative;
+                }
+                .ims{
+                    width: 35px;
+                    height: 35px;
+                    position: relative;
+                    left: 650px;
+                    top: -50px;
+                }
+            </style>
+    <style>
+        .im1{
+            width: 35px;
+            height: 35px;
+            position: relative;
+            transform: rotate(0deg);
+        }
+        .ims1{
+            width: 35px;
+            height: 35px;
+            position: relative;
+            left: 650px;
+            top: -50px;
+            transform: rotate(0deg);
+        }
+    </style>
+   
+            <style>
+                .bo {
+                     font-family:Georgia, 'Times New Roman', Times, serif;
+                     margin: 0;
+                     padding: 0;
+                 }
+                 .sidebar {
+                     height: 100%;
+                     width: 250px;
+                     position: fixed;
+                     top: 135px;
+                     left: -250px;
+                     background-color: #69bb7e;
+                     color: rgb(255, 255, 255);
+                     transition: 0.3s;
+                     overflow-x: hidden;
+                     padding-top: 20px;
+                     z-index: 1;
+                 }
+                 .sidebar a {
+                     padding: 10px 15px;
+                     text-decoration: none;
+                     font-size: 18px;
+                     color: rgb(0, 0, 0);
+                     display: block;
+                     transition: 0.3s;
+                     
+                 }
+                 .sidebar a:hover {
+                     background-color: #ffffff;
+                 }
+                 .sidebar .profile {
+                     padding: 15px;
+                     text-align: center;
+                 }
+                 .sidebar .profile img {
+                     position: relative;
+                     width: 70px;
+                     height: 70px;
+                     border-radius: 50%;
+                     top: -10px;
+                 }
+                 .sidebar .profile h3 {
+                     margin: 10px 0;
+                 }
+                 .sidebar .profile p {
+                     margin: 0;
+                     font-size: 14px;
+                 }
+                 .open-btn {
+                     font-size: 20px;
+                     cursor: pointer;
+                     background-color: #69bb7e;
+                     color: rgb(238, 238, 238);
+                     padding: 10px 15px;
+                     border: none;
+                     position: relative;
+                     left: 95%;
+                     
+                 }
+                 .overlay {
+                     position: fixed;
+                     display: none;
+                     width: 100%;
+                     height: 100%;
+                     top: 0;
+                     left: 0;
+                     z-index: 1;
+                 }
+                         
+                     </style>
+                 </head>
+                 <div class="bo">
+                 
+                 <div class="overlay" id="overlay"></div>
+                 
+                 <div class="sidebar" id="sidebar">
+                     <div class="profile">
+                         <img class="imgs" src="images.jfif" alt="" >
+                         <h3>@mikehem_483</h3>
+                         
+                     </div>
+                     <a href="perfil.html">Mi Perfil</a>
+                     <a href="#">Mi Colección</a>
+            <a href="#">Mis Amigos</a>
+            <a href="#">Mis Notificaciones</a>
+            <a href="#">Mis Favoritos</a>
+            <a href="#">Ajustes y Privacidad</a>
+            <a href="index.html">Cerrar Sesion</a>
+                 </div>
+                 
+                 <button class="open-btn" id="open-btn"><i class="fas fa-bars"></i></button>
+                 
+                 <script>
+                     const openBtn = document.getElementById('open-btn');
+                     const sidebar = document.getElementById('sidebar');
+                     const overlay = document.getElementById('overlay');
+                 
+                     openBtn.addEventListener('click', () => {
+                         sidebar.style.left = '0';
+                         overlay.style.display = 'block';
+                     });
+                 
+                     overlay.addEventListener('click', () => {
+                         sidebar.style.left = '-250px';
+                         overlay.style.display = 'none';
+                     });
+                 </script>
+                 
+                 </div>
+                 </div>
+
+
+        </div>
+    </nav>
+    <!-- cierre Header -->
+    <style>
+        .bg-custom-red {
+            background-color: #69bb7e;
+        }
+
+        .bg-custom-dark {
+            background-color: #ffffff;
+        }
+
+        .bg-custom-light-dark {
+            background-color: #ffffff;
+        }
+
+        .bg-custom-yellow {
+            background-color: #ffa500;
+        }
+
+        .text-custom-green {
+            color: #69bb7e;
+        }
+     
+    </style>
+</head>
+
+<body class="bg-custom-dark text-white">
+    <!-- Header -->
+         <div class="flex items-center mt-4"> </div>
+
+         <style>
+            .btu {
+                font-family: Arial, sans-serif;
+                background-color: #69bb7e;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 150vh;
+            }
+            .profile-container {
+                background-color: #212934;
+                color: #ffffff;
+                width: 97%;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 0 15px #212934;
+            }
+            
+            .profile-picture {
+                position: absolute;
+                bottom: -300px;
+                left: 30px;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: 5px solid #69bb7e;
+                overflow: hidden;
+                top: 112%;
+            }
+            
+            .profile-picture img {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                
+            }
+            .profile-details {
+                padding: 70px 20px 20px 20px;
+                text-align: left;
+            }
+            .profile-details h1 {
+                margin: 0;
+                font-size: 28px;
+                font-weight: normal;
+            }
+            .profile-details p {
+                color: #69bb7e;
+                font-size: 16px;
+            }
+            .profile-buttons {
+                display: flex;
+                justify-content: space-around;
+                padding: 15px 0;
+                border-top: 1px solid #69bb7e;
+            }
+            .profile-buttons button {
+                background-color: #ffffff;
+                color: rgb(0, 0, 0);
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background-color 0.3s;
+            }
+            .profile-buttons button:hover {
+                background-color: #69bb7e;
+            }
+            .icons {
+                display: flex;
+                justify-content: space-around;
+                padding: 10px 0;
+                font-size: 20px;
+            }
+            .icons i {
+                cursor: pointer;
+                transition: color 0.3s;
+            }
+            .icons i:hover {
+                color: #69bb7e;
+            }
+        </style>
+
+        <div class="btu">
+            <div class="profile-container">
+        
+   
+                <div class="profile-header">
+                    <img src="por.jfif" alt="Cover Image" width="1309" height="600">
+
+                <div class="profile-picture">
+                                
+                                
+                <img src="per.jfif" alt="Profile Picture">
+                            
+                        
+                </div>
+                        
+                        
+                </div>
+                      
+                        
+                <div class="profile-details">
+                        
+                            <h1>MikeCj</h1>
+                            <p>Club de Fans</p>
+                        
+                        </div
+                </div>
+                        <div class="icons">
+                            <i class="fas fa-heart"></i>
+                        
+                            
+                    
+                <i class="fas fa-comment"></i>
+                            
+                            
+                <i class="fas fa-bell"></i>
+                            
+                         
+                <i class="fas fa-user-plus"></i>
+                            
+                    
+                <i class="fas fa-envelope"></i>
+                        
+                        
+                </div>
+                <div class="profile-buttons">
+                            
+                        
+                <button>Follow</button>
+                            
+                   
+                <button>Message</button>
+                            <button>Donate</button>
+                        </div>
+                    </div>
+
+                   
+                 
+                    <div class="bto">
+
+                    </div>
+
+                    <div class="bto">
+                        
+                    </div>
+                    
+        </div>
+</body>
+<style>
+    
+
+    .rr {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        background-color: #69bb7e;
+        color: #ffffff;
+        margin: 0;
+        padding: 20px;
+        
+    }
+    .profile-header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .profile-details1 {
+        background-color: #212934;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    .profile-details1 h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .profile-details1 p {
+        margin: 10px 0;
+    }
+    .profile-details1 strong {
+        display: inline-block;
+        width: 120px;
+    }
+    .interests {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .interest {
+        background-color: #ffffff;
+        color: #212934;
+        padding: 10px 15px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+    }
+    .interest i {
+        color: #69bb7e;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<div class="rr">
+<div class="profile-header">
+    <h1>¡Bienvenid@ !</h1>
+
+
+</div>
+<div class="profile-details1">
+    <p><strong>Nombre:</strong> Mikecj</p>
+    <p><strong>Idiomas:</strong> Inglés, Alemán, Español, Francés, Italiano, Rumano</p>
+    <p><strong>Me interesan:</strong> Todos</p>
+    <p><strong>cuerpo:</strong> Con curvas</p>
+    <p><strong>Etnia:</strong> Latina</p> 
+    <p><strong>Pelo:</strong> Rosado</p>
+    <p><strong>Color de ojos:</strong> Color café</p>
+    <p><strong>Intereses:</strong></p>
+    
+ 
+        <div class="interests">
+        <div class="interest"><i class="fas fa-heart"></i> Dominación</div>
+        <div class="interest"><i class="fas fa-heart"></i> Correr</div>
+        <div class="interest"><i class="fas fa-heart"></i> Juegar</div>
+        <div class="interest"><i class="fas fa-heart"></i> Leer</div>
+        <div class="interest"><i class="fas fa-heart"></i> Amor</div>
+        <div class="interest"><i class="fas fa-heart"></i> Bailar</div>
+        <div class="interest"><i class="fas fa-beer"></i> Bares</div>
+        <div class="interest"><i class="fas fa-coffee"></i> Cafés, restaurantes</div>
+        <div class="interest"><i class="fas fa-microphone"></i> Cantar</div>
+        <div class="interest"><i class="fas fa-music"></i> Fiestas</div>
+        <div class="interest"><i class="fas fa-dumbbell"></i> Gimnasia</div>
+        <div class="interest"><i class="fas fa-swimmer"></i> Natación</div>
+    </div>
+</div>
+</div>
+
+
+
+<!--inicio de la otra-->
+
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">MK-DAM</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">3108488197</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@company.com">mk-dam@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Informacion</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="index.html">Inicio</a></li>
+                        <li><a class="text-decoration-none" href="about.html">Quienes somos</a></li>
+                        <li><a class="text-decoration-none" href="#">Localizacion </a></li>
+                        <li><a class="text-decoration-none" href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a rel="nofollow" class="text-light text-decoration-none" target="_blank" href=""><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href=""><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href=""><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href=""><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Email </label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
+                        <div class="input-group-text btn-success text-light">Subscribete</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2024 Company MK-DAM 
+                          
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    
+</body>
+
+</html>
